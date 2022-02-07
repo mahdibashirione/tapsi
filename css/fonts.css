@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'bYekan';
+  font-style: normal;
+  src: url(/assets/fonts/BYekan.woff) format('woff');
+}
+
+body, button {
+  font-family: 'bYekan';
+}
