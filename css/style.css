@@ -507,7 +507,7 @@ header {
   align-items: flex-start;
   margin-top: 50px;
   border-bottom: 1px solid #ccc;
-  padding: 0 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .services .title {
