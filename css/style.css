@@ -164,7 +164,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .nav>a {
@@ -586,7 +586,7 @@ header {
 }
 
 .tab__cover img {
-  width: 80%;
+  width: 70%;
 }
 
 .tab__title {
@@ -910,4 +910,153 @@ header {
   .select-control label::before {
     right: 2rem;
   }
+}
+
+/* SECTION WEBLOG */
+
+.weblog {
+  padding: 0 2rem;
+  margin-bottom: 50px;
+}
+
+.weblog .weblog--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.weblog h2 {
+  margin-bottom: 25px;
+}
+
+.weblog__item {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 10px;
+}
+
+.weblog__item a {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+}
+
+.weblog__item a:hover {
+  box-shadow: 0 0 10px 0 #ccc;
+}
+
+.weblog__item img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.weblog__item h3 {
+  color: #9b9b9b;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+
+.weblog__item p {
+  color: #333 !important;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (min-width:768px) {
+
+  .weblog .weblog--container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .weblog__item {
+    width: 33%;
+    height: 100%;
+    min-width: 350px;
+  }
+
+  .weblog__item h3 {
+    font-size: 2.2rem;
+  }
+}
+
+/* SECTION FOOTER */
+
+.main-footer {
+  background: #000;
+  min-height: 200px;
+  padding: 30px 15px;
+}
+
+.main-footer .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.footer__item span {
+  color: var(--color-white);
+  margin-top: 1rem;
+}
+
+.footer__item h6 {
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer__item a {
+  color: var(--color-white);
+  display: block;
+  width: 100%;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+
+.footer__item a:hover {
+  color: var(--color-primary);
+}
+
+.footer__item.enemad {
+  flex-direction: row;
+}
+
+a.trust-logo {
+  background: var(--color-white);
+  border-radius: 1rem;
+  display: block;
+  width: 80px;
+  height: 110px;
+  margin: 0 0.5rem;
+}
+
+.trust-logo img {
+  max-width: 100%;
+}
+
+@media screen and (min-width:768px) {
+  .main-footer .container {
+    padding: 50px 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .footer__item {
+    width: auto;
+    margin: 0 0 2rem 2rem;
+  }
+
 }
