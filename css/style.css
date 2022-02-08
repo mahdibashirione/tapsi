@@ -299,7 +299,7 @@ header {
 }
 
 .feature-one {
-  margin-top: 13rem;
+  margin-top: 5rem;
 }
 
 .feature-two {
@@ -402,7 +402,7 @@ header {
 .intro-btn h2 {
   color: var(--color-white);
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: 10px;
   user-select: none;
 }
 
@@ -505,9 +505,9 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 150px;
+  margin-top: 50px;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10rem;
+  padding: 0 2rem;
 }
 
 .services .title {
@@ -602,6 +602,11 @@ header {
 }
 
 @media screen and (min-width:768px) {
+  .services {
+    margin-top: 150px;
+    padding: 5rem 0;
+  }
+
   .tab__content {
     flex-direction: row;
   }
@@ -682,7 +687,7 @@ header {
 /* SECTION TRAVELL */
 
 .travell--container {
-  padding: 2rem;
+  padding-right: 2rem;
 }
 
 .travell--container h2 {
@@ -770,6 +775,12 @@ header {
   margin-left: 1.5rem;
 }
 
+@media screen and (min-width:768px) {
+  .travell--container {
+    padding: 0;
+  }
+}
+
 /* AVATAR GROUP */
 
 .avatar-group {
@@ -817,12 +828,14 @@ header {
 
 .box-download {
   padding: 0 2rem;
-  margin: 100px auto;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box-download button {
-  display: block;
-  width: 190px;
+  width: 100%;
 }
 
 .select-type {
@@ -835,7 +848,7 @@ header {
 .select-control {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  flex: 1 1 50%;
 }
 
 .select-control:not(:last-child) {
@@ -886,6 +899,14 @@ header {
 }
 
 @media screen and (min-width:768px) {
+  .box-download {
+    margin: 100px auto;
+  }
+
+  .box-download button {
+    width: 50%;
+  }
+
   .select-control label::before {
     right: 2rem;
   }
