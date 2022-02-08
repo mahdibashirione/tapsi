@@ -10,6 +10,7 @@
   --color-primary: #ff5722;
   --color-secendray-light: #FFA589;
   --color-secendray-dark: #FF7A50;
+  --color-blue: #1974DF;
   --color-navbar: #f8f8f8;
   --color-heading: #141414;
   --color-body: #333333;
@@ -18,7 +19,7 @@
   --font-en: 'Arial';
   --font-icon: 'Font Awesome 6 Pro';
   --avatar-size: 50px;
-  --color-radio-cheked: #2563eb;
+  --color-radio-cheked: #1974DF;
 }
 
 html {
@@ -28,7 +29,8 @@ html {
 body {
   /*background: #ccc;*/
   color: var(--color-body);
-  font-size: 1.4rem;
+  font-size: 1.8rem;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -46,7 +48,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.8rem;
 }
 
 h3 {
@@ -87,6 +89,8 @@ h3 {
     font-size: 1.6rem;
   }
 }
+
+/* style button */
 
 .btn {
   padding: 1.5rem 3rem;
@@ -146,6 +150,45 @@ h3 {
   background: var(--color-primary);
   color: var(--color-white);
   font-size: 1.4rem;
+}
+
+/* button scroll top */
+
+.scroll-top {
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-secendray-dark);
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.scroll-top:hover>.title__btntop {
+  opacity: 1;
+}
+
+.scroll-top i {
+  transform: rotate(180deg);
+  color: var(--color-white);
+}
+
+.title__btntop {
+  opacity: 0;
+  position: absolute;
+  left: -125px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--color-white);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: 1px solid;
+  transition: all 0.2s ease-in;
 }
 
 /*  SECTION HEADER */
@@ -684,6 +727,19 @@ header {
   opacity: 1;
 }
 
+.acordian-container button {
+  background: var(--color-blue);
+  color: var(--color-white);
+  margin-top: 2rem;
+}
+
+@media screen and (min-width:768px) {
+  .acordian-container button {
+    font-size: 1.6rem;
+    margin-top: 4rem;
+  }
+}
+
 /* SECTION TRAVELL */
 
 .travell--container {
@@ -937,6 +993,7 @@ header {
 .weblog__item a {
   display: block;
   width: 100%;
+  height: 450px;
   padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 1rem;
@@ -953,8 +1010,8 @@ header {
 
 .weblog__item h3 {
   color: #9b9b9b;
-  font-size: 1.6rem;
-  margin: 10px 0;
+  font-size: 2rem;
+  margin: 2rem 0;
 }
 
 .weblog__item p {

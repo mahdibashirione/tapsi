@@ -25,3 +25,12 @@ accordionTab.forEach(tach => {
   })
 })
 
+window.onscroll = function () { isScrollTop() }
+function isScrollTop() {
+  const btnScrollTop = document.querySelector('.scroll-top')
+  if (document.documentElement.scrollTop > 2000) {
+    btnScrollTop.style.display = 'flex';
+  } else {
+    btnScrollTop.style.display = 'none';
+  }
+}

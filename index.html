@@ -13,7 +13,7 @@
   <title>Tap30</title>
 </head>
 
-<body>
+<body onscroll="MyBtn_GoUp()">
 
   <header>
     <nav class="nav container">
@@ -335,6 +335,7 @@
         </div>
         <div></div>
       </div>
+      <button class="btn">ثبت نام راننده تاکسی آنلاین</button>
     </section>
 
     <section class="container travell--container">
@@ -535,7 +536,7 @@
             <a href="#">
               <img alt="شهرهای حومه"
                 src="https://blog.tapsi.ir/wp-content/uploads/2022/02/takhfife-hoomeye-shahr-blog-scaled.jpg">
-              <h3 class="sub-title">تخفیف تپسی برای شهرهای حومه <br>تهران</h3>
+              <h3 class="sub-title">تخفیف تپسی برای شهرهای حومه تهران</h3>
               <p>از امروز می‌توانید از مبدا شهرهای حومه تهران با تخفیف ویژه سفر کنید. برای دریافت این تخفیف‌ها نیازی به
                 وارد کردن کد نیست و تنها کافیست پین مبدا سفرتان را روی یکی از شهرهای زیر قرار دهید و به مقصد مورد نظرتان
                 درخواست سفر ثبت کنید. شهرهای اطراف تهران اسلامشهر پاکدشت نسیم شهر پردیس رباط</p>
@@ -605,6 +606,12 @@
         </div>
       </div>
     </footer>
+
+    <div onclick='window.scrollTo({top: 0, behavior: "smooth"});' class="scroll-top">
+      <i class="fas fa-angle-down"></i>
+      <span class="title__btntop">بازگشت به بالا</span>
+    </div>
+
   </main>
 
 </body>
