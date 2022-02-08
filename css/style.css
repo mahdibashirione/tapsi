@@ -91,7 +91,6 @@ h3 {
 }
 
 /* style button */
-
 .btn {
   padding: 1.5rem 3rem;
   outline: none;
@@ -169,10 +168,6 @@ h3 {
   transition: all 0.3s ease-in;
 }
 
-.scroll-top:hover>.title__btntop {
-  opacity: 1;
-}
-
 .scroll-top i {
   transform: rotate(180deg);
   color: var(--color-white);
@@ -191,12 +186,18 @@ h3 {
   transition: all 0.2s ease-in;
 }
 
+@media screen and (min-width:768px) {
+  .scroll-top:hover>.title__btntop {
+    opacity: 1;
+  }
+}
+
 /*  SECTION HEADER */
 
 header {
   width: 100%;
   background: var(--color-navbar);
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 5px #ccc;
   position: sticky;
   top: 0;
   z-index: 10;
@@ -428,7 +429,7 @@ header {
 }
 
 .intro-btn {
-  width: 250px;
+  width: 270px;
   padding: 16px;
   border-radius: 20px;
   color: var(--color-white);
@@ -440,11 +441,13 @@ header {
 .intro-btn h1 {
   color: var(--color-white);
   user-select: none;
+  font-size: 2.5rem;
 }
 
 .intro-btn h2 {
   color: var(--color-white);
   font-weight: 400;
+  font-size: 1.6rem;
   margin-top: 10px;
   user-select: none;
 }
@@ -513,6 +516,14 @@ header {
   .intro-btn {
     width: 500px;
     margin-right: 40px;
+  }
+
+  .intro-btn h1 {
+    font-size: 5rem;
+  }
+
+  .intro-btn h2 {
+    font-size: 2.4rem;
   }
 
   .intro-btn__passenger {
@@ -637,6 +648,7 @@ header {
 }
 
 .tab__title h3 {
+  font-size: 1.8rem;
   margin: 2rem 0;
 }
 
@@ -662,6 +674,11 @@ header {
     display: flex;
   }
 
+  .tab__title h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+  }
+
   .tab__title h3, p {
     line-height: 4rem;
   }
@@ -680,6 +697,7 @@ header {
 .acordian-container h2 {
   width: 90%;
   margin-bottom: 5rem;
+  line-height: 50px;
 }
 
 .acordian {
@@ -860,8 +878,8 @@ header {
 }
 
 .avatar img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .hidden-avatar {
@@ -993,7 +1011,7 @@ header {
 .weblog__item a {
   display: block;
   width: 100%;
-  height: 450px;
+  height: auto;
   padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 1rem;
@@ -1034,6 +1052,10 @@ header {
     width: 33%;
     height: 100%;
     min-width: 350px;
+  }
+
+  .weblog__item a {
+    height: 450px;
   }
 
   .weblog__item h3 {
@@ -1088,6 +1110,9 @@ header {
 
 .footer__item.enemad {
   flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 270px;
+  margin-bottom: 100px;
 }
 
 a.trust-logo {
@@ -1103,6 +1128,37 @@ a.trust-logo {
   max-width: 100%;
 }
 
+.social-container h3 {
+  color: var(--color-white);
+  font-weight: 400;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  padding: 2rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  background: var(--color-white);
+}
+
+.social-links a:hover {
+  background: var(--color-primary);
+}
+
+
 @media screen and (min-width:768px) {
   .main-footer .container {
     padding: 50px 0;
@@ -1114,6 +1170,10 @@ a.trust-logo {
   .footer__item {
     width: auto;
     margin: 0 0 2rem 2rem;
+  }
+
+  .footer__item.enemad {
+    margin: 0;
   }
 
 }
